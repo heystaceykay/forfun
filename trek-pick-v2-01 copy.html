@@ -146,11 +146,11 @@ switch(seriesID) {
         switch(season) {
             case 1: 
                 episode = Math.floor(Math.random() * 16) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
             case 2:
                 episode = Math.floor(Math.random() * 6) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
         }
         break;
@@ -167,11 +167,11 @@ switch(seriesID) {
             case 6:
             case 7:
                 episode = Math.floor(Math.random() * 26) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
             case 2: 
                 episode = Math.floor(Math.random() * 22) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
         }
         break;
@@ -188,11 +188,11 @@ switch(seriesID) {
             case 6:
             case 7:
                 episode = Math.floor(Math.random() * 26) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
             case 1: 
                 episode = Math.floor(Math.random() * 20) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
         }
         break;
@@ -209,11 +209,11 @@ switch(seriesID) {
             case 6:
             case 7:
                 episode = Math.floor(Math.random() * 26) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
             case 1: 
                 episode = Math.floor(Math.random() * 16) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
         }
         break;
@@ -226,15 +226,15 @@ switch(seriesID) {
             case 1: 
             case 2:
                 episode = Math.floor(Math.random() * 26) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
             case 3:
                 episode = Math.floor(Math.random() * 24) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
             case 4:
                 episode = Math.floor(Math.random() * 22) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
         }
         break;
@@ -246,11 +246,11 @@ switch(seriesID) {
         switch(season) {
             case 1: 
                 episode = Math.floor(Math.random() * 15) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
             case 2:
                 episode = Math.floor(Math.random() * 14) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
         }
         break;
@@ -262,11 +262,11 @@ switch(seriesID) {
         switch(season) {
             case 1: 
                 episode = Math.floor(Math.random() * 4) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
             case 2:
                 episode = Math.floor(Math.random() * 6) + 1;
-                console.log(`You have selected ${episode}!`);
+                console.log(`You have selected episode ${episode}!`);
                 break;
         }
         break;
@@ -274,7 +274,7 @@ switch(seriesID) {
         series = 'Picard';
         console.log(`You have selected ${series}.`);
         episode = Math.floor(Math.random() * 10) + 1;
-        console.log(`You have selected ${episode}!`);
+        console.log(`You have selected episode ${episode}!`);
         break;
 }
 
@@ -285,6 +285,10 @@ console.log(`x You have selected ${season}.`);
 console.log(`x You have selected episode ${episode}.`);
 
 showEpisode();
+
+function changeBodyBg(seriesID){
+            document.body.style.backgroundimage = 'url("https://i.ibb.co/1z6zdVC/picard1.jpg")';
+        }
 
 }
 
