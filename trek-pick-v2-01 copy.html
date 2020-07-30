@@ -74,35 +74,219 @@
     </div>
     <script>
     
-    function episodeChooser() {
+//     function episodeChooser() {
 
-        function showEpisode() {
-            document.getElementById('myEpisode').innerHTML = "<p>You've been assigned <span>season " + season + ", episode " + episode + ".</span></p>";
-            }
+//         function showEpisode() {
+//             document.getElementById('myEpisode').innerHTML = "<p>You've been assigned <span>season " + season + ", episode " + episode + ".</span></p>";
+//             }
     
-    const season = Math.floor(Math.random() * 7) + 1;
-    console.log('You have selected season ' + season + '.');
+//     const season = Math.floor(Math.random() * 7) + 1;
+//     console.log('You have selected season ' + season + '.');
 
-    let episode = 0;
+//     let episode = 0;
     
-    switch (season) {
-        case 1:
-        case 3:
-        case 4:
-        case 5:
-        case 6:
-        case 7:
-            episode = Math.floor(Math.random() * 26) + 1;
-            console.log('You have selected episode ' + episode + '.');
-            break;
-        case 2: 
-            episode = Math.floor(Math.random() * 22) + 1; 
-            console.log('You have selected episode ' + episode + '.');
-            break;
+//     switch (season) {
+//         case 1:
+//         case 3:
+//         case 4:
+//         case 5:
+//         case 6:
+//         case 7:
+//             episode = Math.floor(Math.random() * 26) + 1;
+//             console.log('You have selected episode ' + episode + '.');
+//             break;
+//         case 2: 
+//             episode = Math.floor(Math.random() * 22) + 1; 
+//             console.log('You have selected episode ' + episode + '.');
+//             break;
+//     }
+
+//     showEpisode();
+
+//    }
+
+function episodeChooser() {
+
+function showEpisode() {
+    document.getElementById('myEpisode').innerHTML = `<p>You've been assigned <span>series ${series}: season ${season}, episode ${episode}.</span></p>`;
     }
 
-    showEpisode();
+const seriesID = Math.floor(Math.random() * 9) + 1;
 
-   }
+let series = "";
+let season = 0;
+let episode = 0;
+
+switch(seriesID) {
+    case 1: 
+        series = 'The Original Series';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 3) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch(season) {
+            case 1: 
+                episode = Math.floor(Math.random() * 29) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 2:
+                episode = Math.floor(Math.random() * 29) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 3:
+                episode = Math.floor(Math.random() * 29) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+        }
+        break;
+    case 2: 
+        series = 'The Animated Series';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 2) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch(season) {
+            case 1: 
+                episode = Math.floor(Math.random() * 16) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+            case 2:
+                episode = Math.floor(Math.random() * 6) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+        }
+        break;
+    case 3: 
+        series = 'The Next Generation';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 7) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch (season) {
+            case 1:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+                episode = Math.floor(Math.random() * 26) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+            case 2: 
+                episode = Math.floor(Math.random() * 22) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+        }
+        break;
+    case 4: 
+        series = 'Deep Space Nine';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 7) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch (season) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+                episode = Math.floor(Math.random() * 26) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+            case 1: 
+                episode = Math.floor(Math.random() * 20) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+        }
+        break;
+    case 5: 
+        series = 'Voyager';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 7) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch (season) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+                episode = Math.floor(Math.random() * 26) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+            case 1: 
+                episode = Math.floor(Math.random() * 16) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+        }
+        break;
+    case 6: 
+        series = 'Enterprise';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 7) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch (season) {
+            case 1: 
+            case 2:
+                episode = Math.floor(Math.random() * 26) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+            case 3:
+                episode = Math.floor(Math.random() * 24) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+            case 4:
+                episode = Math.floor(Math.random() * 22) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+        }
+        break;
+    case 7: 
+        series = 'Discovery';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 2) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch(season) {
+            case 1: 
+                episode = Math.floor(Math.random() * 15) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+            case 2:
+                episode = Math.floor(Math.random() * 14) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+        }
+        break;
+    case 8:
+        series = 'Short Treks';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 2) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch(season) {
+            case 1: 
+                episode = Math.floor(Math.random() * 4) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+            case 2:
+                episode = Math.floor(Math.random() * 6) + 1;
+                console.log(`You have selected ${episode}!`);
+                break;
+        }
+        break;
+    case 9:
+        series = 'Picard';
+        console.log(`You have selected ${series}.`);
+        episode = Math.floor(Math.random() * 10) + 1;
+        console.log(`You have selected ${episode}!`);
+        break;
+}
+
+
+
+console.log(`x You have selected ${series}.`);
+console.log(`x You have selected ${season}.`);
+console.log(`x You have selected episode ${episode}.`);
+
+showEpisode();
+
+}
+
     </script>
 </body>
